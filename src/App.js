@@ -27,6 +27,7 @@ const [searchTerm, setSearchTerm] = useState('');
     const response = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json();
     setMovies(data.Search);
+    console.log(movies);
   };
 
   return (
